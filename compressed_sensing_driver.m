@@ -1,6 +1,6 @@
 function compressed_sensing_driver
     % Load in audio file
-    [data, rate] = audioread("440_sine.wav", [10001, 30000]);
+    [data, rate] = audioread("440_sine.wav");
     data = sparse(data);
     
     % Consider only the first channel
